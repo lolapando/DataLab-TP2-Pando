@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+/* Animación hecha especialmente para la imagen del caballo */
+@keyframes animar-caballo
+{
+    from
+    {
+        background-position: 0 0;
+    }
+    to
+    {
+        background-position: -600px 0;
+    }
+}
+
+
+html
+{
+    background-color: rgb(255, 255, 255);
+}
+
+header
+{
+    text-align: center;
+}
+
+#titulo-principal
+{
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: rgb(5, 83, 101)
+
+}
+
+#descripcion-titulo-principal
+{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 20px;
+    
+}
+
+#boton-de-google
+{
+    display: block;
+    margin: auto;
+    
+    width: 80px;
+    height: 25px;
+
+    border: 3px solid rgb(5, 83, 101);
+    background-color: rgb(5, 83, 101);
+    color: rgb(252, 252, 252);
+}
+
+main
+{
+    width: 90%;
+    border: 3px solid rgb(5, 83, 101);
+    margin: auto;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+div
+{
+    width: 30%;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+video
+{
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+#animacion-de-caballo
+{
+    /* Determinamos el tamaño del contenedor.
+       El tamaño que tiene que tener es el de un fotograma.
+       Un fotograma tiene 150px de ancho y 120px de alto. Por lo tanto,
+       esta división va a tener ese tamaño para que se vea un fotograma a la vez. */
+    width: 150px;
+    height: 120px;
+
+
+    background-image: url(../images/caballo.jpg);
+    animation: animar-caballo 0.5s steps(4) infinite;
+}
+
+footer
+{
+    width: 100%;
+    height: 50px;
+
+    background-color: rgb(5, 83, 101);
+    text-align: center;
+
+    margin-top: 100px;
+}
+
+#texto-de-pie
+{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 18px;
+    color: rgb(252, 252, 252)
+    
+}
